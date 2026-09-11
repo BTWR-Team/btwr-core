@@ -5,8 +5,8 @@
   "compatibilityLevel": "JAVA_17",
   "client": [
     "client.ClientPlayerEntityMixin",
-    "client.CreeperEntityRendererMixin",
-    "client.InGameHudMixin"
+    "client.InGameHudMixin",
+    "client.LivingEntityRendererMixin"
   ],
   "injectors": {
     "defaultRequire": 1

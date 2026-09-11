@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "btwr:block/creeper_oyster_block"
-  }
-}

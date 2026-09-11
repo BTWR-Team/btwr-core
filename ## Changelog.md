@@ -1,3 +1,24 @@
+## UNFINISHED:
++ [dev] Added/backported the difficulty system from BTW: Community Edition! By default, it contains the base difficulties (classic, relaxed, standard & hostile), but it also allows addon developers to use the API to add custom difficulties too
+
+## v0.5
+### Warning, this is a game-breaking update. Proceed with caution!
++ Added "Hardcore Buoy". It changes vanilla buoyancy for items touching water to act differently based on their buoyancy value. Customizable with item tags and can be turned off in the config options
++ Added "Hardcore Poking" (Only sticks placeable as blocks, tools being placeable are already in the Bind mod)
++ Added "Hardcore Player Names" as a config option. Allows hiding of player name tags on SMP
++ Added a custom data-driven system for defining which conditions mobs can spawn in the world
++ Added/removed invulnerability frames for players when joining a game. This applies only on integrated servers and is configurable
++ Added optional recipes for crafting diamond tools with diamond ingots.
++ Changed the diamond ingots default recipe to yield two diamond ingots. This gives an incentive for using diamond ingots over diamonds
++ Changed diamond ingots recipe to be crafted with iron ingot, diamond, rotten flesh and red mushroom. This is the placeholder recipe for the mod since there are no creeper oysters anymore
++ Changed lightning strikes to be two times as common when it's thundering. This can be turned off with the new configuration option `increasedLightningStrikeChance`
++ Fixed knockback not applying in certain cases with the knockback restrictions rule
++ Removed all the new food items/combinations and moved them to the Self Sustainable mod as it made most sense for them to be there
++ Removed creeper shearing and creeper oysters. Those are now in a new separate mod called "Creeper Shearing"
++ Removed/reworked the config option for "spawnMobsOnWood" and made it use the new data-driven mob spawn system. The name of the configuration option is now "btwMobSpawningLogic"
++ Updated the mod license in the source code to show correct information
++ Updated the mod to Fabric API 0.116.15, Fabric Loader 0.19.5 & BTWR: Shared Library 0.8.5
+
 ## v0.4.1
 + Fixed missing spider eye blocks and slab from the creative inventory tab
 + Fixed creepers dropping creeper oysters even when neutered after killed

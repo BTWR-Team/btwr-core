@@ -1,0 +1,34 @@
+{
+  "type": "btwr:all_of",
+  "predicates": [
+    { "type": "btwr:requires_collision" },
+    {
+      "type": "btwr:not",
+      "predicate": {
+        "type": "btwr:any_of",
+        "predicates": [
+          { "type": "btwr:matches_tag", "tag": "minecraft:logs" },
+          { "type": "btwr:matches_tag", "tag": "minecraft:planks" },
+          { "type": "btwr:matches_tag", "tag": "minecraft:wooden_slabs" },
+          { "type": "btwr:matches_tag", "tag": "minecraft:wooden_stairs" },
+          { "type": "btwr:matches_tag", "tag": "minecraft:wooden_buttons" },
+          { "type": "btwr:matches_tag", "tag": "minecraft:wooden_doors" },
+          { "type": "btwr:matches_tag", "tag": "minecraft:wooden_fences" },
+          { "type": "btwr:matches_tag", "tag": "minecraft:wooden_pressure_plates" },
+          { "type": "btwr:matches_tag", "tag": "minecraft:wooden_trapdoors" },
+          { "type": "btwr:matches_tag", "tag": "minecraft:wool" },
+          { "type": "btwr:matches_tag", "tag": "minecraft:wool_carpets" },
+          {
+            "type": "btwr:matches_blocks",
+            "blocks": [
+              "minecraft:bedrock",
+              "minecraft:barrier",
+              "minecraft:chorus_flower",
+              "minecraft:scaffolding"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

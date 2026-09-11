@@ -9,11 +9,14 @@
       "item": "minecraft:diamond"
     },
     {
-      "item": "btwr:creeper_oysters"
+      "item": "minecraft:rotten_flesh"
+    },
+    {
+      "item": "minecraft:red_mushroom"
     }
   ],
   "result": {
-    "count": 1,
+    "count": 2,
     "id": "btwr:diamond_ingot"
   }
 }

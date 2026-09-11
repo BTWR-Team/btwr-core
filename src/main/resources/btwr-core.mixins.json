@@ -6,17 +6,28 @@
   "mixins": [
     "accessor.BeaconBlockEntityAccessor",
     "accessor.RegistryEntryListDirectAccessor",
-    "block.AbstractBlock$AbstractBlockStateMixin",
+    "ai.goal.TeleportTowardsPlayerGoalMixin",
+    "block.AbstractBlockStateMixin",
+    "entity.AbstractSkeletonEntityMixin",
     "entity.BeaconBlockEntityMixin",
     "entity.CreeperEntityMixin",
+    "entity.EndermanEntityInvoker",
     "entity.EndermanEntityMixin",
+    "entity.EntityMixin",
+    "entity.ItemEntityMixin",
+    "entity.LightningEntityMixin",
     "entity.LivingEntityMixin",
+    "entity.MobEntityMixin",
+    "entity.PlayerEntityMixin",
+    "entity.ServerPlayerEntityMixin",
     "entity.SheepEntityMixin",
     "entity.SpawnGroupMixin",
     "entity.WitherSkullEntityMixin",
     "entity.ZombieEntityMixin",
     "item.ItemMixin",
-    "loot.MatchToolLootConditionMixin"
+    "loot.MatchToolLootConditionMixin",
+    "world.ServerWorldMixin",
+    "world.WorldMixin"
   ],
   "injectors": {
     "defaultRequire": 1

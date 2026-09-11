@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "D": {
+      "item": "btwr:diamond_ingot"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "D",
+    "D",
+    "S"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:diamond_sword"
+  }
+}

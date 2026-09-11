@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "btwr:darkness",
+    "btwr:can_spawn_on_leaves",
+    "btwr:never"
+  ]
+}

@@ -10,7 +10,7 @@ import net.minecraft.predicate.item.ItemPredicate;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.registry.entry.RegistryEntryList;
-import org.btwr.core.item.BTWR_Items;
+import org.btwr.core.item.ModItems;
 import org.btwr.core.mixin.accessor.RegistryEntryListDirectAccessor;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
@@ -34,7 +34,8 @@ public abstract class MatchToolLootConditionMixin implements LootCondition {
     // Capture all MatchTool predicates as they are constructed
     @Inject(at = @At("RETURN"), method = "<init>")
     private void capturePredicates(CallbackInfo ci) {
-        ((MatchToolLootCondition)(Object)this).predicate().ifPresent(ITEM_PREDICATES::add);
+        MatchToolLootCondition self = (MatchToolLootCondition)(Object)this;
+        self.predicate().ifPresent(ITEM_PREDICATES::add);
     }
 
     static {
@@ -42,7 +43,7 @@ public abstract class MatchToolLootConditionMixin implements LootCondition {
         CommonLifecycleEvents.TAGS_LOADED.register((registries, client) -> {
             // Wrap vanilla shears and diamond shears in registryEntries
             RegistryEntry<Item> vanillaShears = Registries.ITEM.getEntry(Items.SHEARS);
-            RegistryEntry<Item> diamondShears = Registries.ITEM.getEntry(BTWR_Items.DIAMOND_SHEARS);
+            RegistryEntry<Item> diamondShears = Registries.ITEM.getEntry(ModItems.DIAMOND_SHEARS);
 
             // Iterate over all captured predicates
             for (ItemPredicate predicate : ITEM_PREDICATES) {

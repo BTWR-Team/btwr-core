@@ -32,5 +32,10 @@
     "minecraft": "${minecraft_version}",
     "btwr_sl": ">=${btwr_sl_version}"
   },
+  "custom": {
+    "loom:injected_interfaces": {
+      "net/minecraft/class_1937": ["org/btwr/core/world/WorldAdded"]
+    }
+  },
   "accessWidener" : "btwr-core.accesswidener"
 }

@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "btwr:block/creeper_oyster_block",
-    "side": "btwr:block/creeper_oyster_block",
-    "top": "btwr:block/creeper_oyster_block"
-  }
-}

@@ -45,13 +45,6 @@ public class ModFoodComponents {
     public static final FoodComponent HEARTY_STEW = createStew(10, 0.46f).build();
 
     // Unique foods
-    public static final FoodComponent CREEPER_OYSTERS =
-            new FoodComponent.Builder()
-                    .nutrition(1)
-                    .saturationModifier(0.10f)
-                    .statusEffect(new StatusEffectInstance(StatusEffects.POISON, 100,0),1f)
-                    .build();
-
     public static final FoodComponent BEAST_LIVER_RAW =
             new FoodComponent.Builder()
                     .nutrition(5)

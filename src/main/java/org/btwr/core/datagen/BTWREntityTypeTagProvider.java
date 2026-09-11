@@ -22,17 +22,10 @@ public class BTWREntityTypeTagProvider extends FabricTagProvider.EntityTypeTagPr
         addToConventionalTags();
     }
 
-    private void addToVanilla() {
+    private void addToVanilla() {}
 
-    }
+    private void addToModTags() {}
 
-    private void addToModTags() {
-        // Add the vanilla creeper by default
-        getOrCreateTagBuilder(BTWRTags.EntityTypes.NEUTERABLE_CREEPERS)
-                .add(EntityType.CREEPER);
-    }
-
-    private void addToConventionalTags() {
-    }
+    private void addToConventionalTags() {}
 
 }
