@@ -4,9 +4,8 @@ import net.minecraft.component.DataComponentTypes;
 import net.minecraft.component.type.NbtComponent;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.world.WorldAccess;
-import org.btwr.core.api.BlightSpreadConditions;
-import org.btwr.core.block.BTWR_Blocks;
-import org.btwr.core.tag.BTWRTags;
+import org.btwr.core.api.world.BlightSpreadRegistry;
+import org.btwr.core.block.ModBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
@@ -55,7 +54,7 @@ public class BlightBlock extends Block {
 
     /** Helper method to set Blight Roots more easily. **/
     private BlockState blightRootsWithLevel(int level) {
-        return BTWR_Blocks.BLIGHT_ROOTS.getDefaultState().with(BlightRootsBlock.LEVEL, level);
+        return ModBlocks.BLIGHT_ROOTS.getDefaultState().with(BlightRootsBlock.LEVEL, level);
     }
 
     public final boolean isMature(BlockState state) {
@@ -197,7 +196,7 @@ public class BlightBlock extends Block {
             BlockState targetState = world.getBlockState(targetPos);
             BlockState aboveState = world.getBlockState(targetPos.up());
 
-            if (BlightSpreadConditions.canBlightSpreadTo(world, targetPos, targetState, blightLevel)) {
+            if (BlightSpreadRegistry.canBlightSpreadTo(world, targetPos, targetState, blightLevel)) {
                 if (blightLevel < 3) {
                     if (aboveState.getOpacity(world, targetPos.up()) <= 2) {
                         world.setBlockState(targetPos, this.withLevel(0), Block.NOTIFY_ALL);
@@ -244,7 +243,7 @@ public class BlightBlock extends Block {
                 }
             }
         }
-        else if (this.getLevel(state) == 2 || (state.isOf(BTWR_Blocks.BLIGHT_ROOTS) && this.getLevel(state) == 0)) {
+        else if (this.getLevel(state) == 2 || (state.isOf(ModBlocks.BLIGHT_ROOTS) && this.getLevel(state) == 0)) {
             // Check for evolution
             int randomX = pos.getX() + random.nextInt(7) - 3;
             int randomY = pos.getY() + random.nextInt(7) - 3;
@@ -288,13 +287,13 @@ public class BlightBlock extends Block {
         }
         else {
             // On the surface
-            if ((state.isOf(BTWR_Blocks.BLIGHT_ROOTS) && blightLevel == 0)) {
+            if ((state.isOf(ModBlocks.BLIGHT_ROOTS) && blightLevel == 0)) {
                 world.setBlockState(pos, this.getDefaultState().with(LEVEL, 2));
 
                 return true;
             }
 
-            if ((state.isOf(BTWR_Blocks.BLIGHT_ROOTS) && state.get(LEVEL) == 1)) {
+            if ((state.isOf(ModBlocks.BLIGHT_ROOTS) && state.get(LEVEL) == 1)) {
                 world.setBlockState(pos, this.getDefaultState().with(LEVEL, 3));
 
                 return true;
@@ -339,7 +338,7 @@ public class BlightBlock extends Block {
     public boolean isSurfaceBlight(BlockState state) {
         int blightLevel = state.get(LEVEL);
         if (!state.contains(LEVEL)) return false;
-        return blightLevel >= 0 && blightLevel <= 3 && !state.isOf(BTWR_Blocks.BLIGHT_ROOTS);
+        return blightLevel >= 0 && blightLevel <= 3 && !state.isOf(ModBlocks.BLIGHT_ROOTS);
     }
 
     private int getRootsLevelForBlightLevel(int level) {
@@ -359,7 +358,7 @@ public class BlightBlock extends Block {
 
     public int getBlightLevelForSpread(BlockState state) {
         // Roots only spawn at Blight level 3
-        if (state.isOf(BTWR_Blocks.BLIGHT_ROOTS)) {
+        if (state.isOf(ModBlocks.BLIGHT_ROOTS)) {
             return 3;
         }
 

@@ -2,6 +2,9 @@
 /.gradle/
 /build/
 /run/
+/run2/
+/.run-2/
+/logs/
 /.idea/
 /src/main/generated/.cache/
 /libs/

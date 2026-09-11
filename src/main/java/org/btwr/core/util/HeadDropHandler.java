@@ -30,7 +30,6 @@ public class HeadDropHandler {
         }
     }
 
-    // Mirrors EntityPlayerMP#checkForHeadDrop from BTW
     private static void checkForPlayerHeadDrop(LivingEntity entity, DamageSource source) {
         var random = entity.getRandom();
         var attacker = source.getAttacker();

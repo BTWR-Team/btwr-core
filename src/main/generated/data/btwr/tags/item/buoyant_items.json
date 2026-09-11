@@ -1,0 +1,298 @@
+{
+  "values": [
+    {
+      "id": "#self_sustainable:primitive_firestarters",
+      "required": false
+    },
+    "#c:seeds",
+    "#c:tools",
+    {
+      "id": "bwt:hemp",
+      "required": false
+    },
+    {
+      "id": "bwt:gear",
+      "required": false
+    },
+    {
+      "id": "bwt:flour",
+      "required": false
+    },
+    {
+      "id": "bwt:hemp_fiber",
+      "required": false
+    },
+    {
+      "id": "bwt:scoured_leather",
+      "required": false
+    },
+    {
+      "id": "bwt:sail",
+      "required": false
+    },
+    {
+      "id": "bwt:fabric",
+      "required": false
+    },
+    {
+      "id": "bwt:tanned_leather",
+      "required": false
+    },
+    {
+      "id": "bwt:strap",
+      "required": false
+    },
+    {
+      "id": "bwt:belt",
+      "required": false
+    },
+    {
+      "id": "bwt:wood_blade",
+      "required": false
+    },
+    {
+      "id": "bwt:tallow",
+      "required": false
+    },
+    {
+      "id": "bwt:haft",
+      "required": false
+    },
+    {
+      "id": "bwt:padding",
+      "required": false
+    },
+    {
+      "id": "bwt:unfired_urn",
+      "required": false
+    },
+    {
+      "id": "bwt:saw_dust",
+      "required": false
+    },
+    {
+      "id": "bwt:soul_dust",
+      "required": false
+    },
+    {
+      "id": "bwt_hct:fuse",
+      "required": false
+    },
+    "#btwr:cut_leathers",
+    {
+      "id": "vegehenna:pastry_uncooked_cake",
+      "required": false
+    },
+    {
+      "id": "vegehenna:pastry_uncooked_cookies",
+      "required": false
+    },
+    {
+      "id": "vegehenna:pastry_uncooked_pumpkin_pie",
+      "required": false
+    },
+    {
+      "id": "vegehenna:bread_dough",
+      "required": false
+    },
+    {
+      "id": "vegehenna:sugar_cane_roots",
+      "required": false
+    },
+    {
+      "id": "vegehenna:sugar_cane_roots",
+      "required": false
+    },
+    {
+      "id": "nomads_rest:bedrolls",
+      "required": false
+    },
+    {
+      "id": "animageddon:tangled_web",
+      "required": false
+    },
+    "#minecraft:beds",
+    "minecraft:leather_helmet",
+    "minecraft:leather_chestplate",
+    "minecraft:leather_leggings",
+    "minecraft:leather_boots",
+    "btwr:leather_tanned_helmet",
+    "btwr:leather_tanned_chestplate",
+    "btwr:leather_tanned_leggings",
+    "btwr:leather_tanned_boots",
+    {
+      "id": "self_sustainable:wool_helmet",
+      "required": false
+    },
+    {
+      "id": "self_sustainable:wool_chestplate",
+      "required": false
+    },
+    {
+      "id": "self_sustainable:wool_leggings",
+      "required": false
+    },
+    {
+      "id": "self_sustainable:wool_boots",
+      "required": false
+    },
+    "minecraft:arrow",
+    "minecraft:spectral_arrow",
+    "minecraft:tipped_arrow",
+    {
+      "id": "#sturdy_trees:bark_items",
+      "required": false
+    },
+    "minecraft:bone",
+    "#minecraft:candles",
+    {
+      "id": "bwt:canvas",
+      "required": false
+    },
+    {
+      "id": "tough_environment:chisel_wood",
+      "required": false
+    },
+    "btwr:club_wood",
+    "btwr:club_bone",
+    "#minecraft:wooden_doors",
+    {
+      "id": "bwt:dung",
+      "required": false
+    },
+    {
+      "id": "bwt:dynamite",
+      "required": false
+    },
+    {
+      "id": "self_sustainable:knitting",
+      "required": false
+    },
+    {
+      "id": "self_sustainable:knitting_needles",
+      "required": false
+    },
+    {
+      "id": "bwt:nether_groth",
+      "required": false
+    },
+    {
+      "id": "bwt:rope",
+      "required": false
+    },
+    "minecraft:stick",
+    {
+      "id": "bwt:soap",
+      "required": false
+    },
+    {
+      "id": "btwr_ds:soul_flux",
+      "required": false
+    },
+    {
+      "id": "bwt:soul_urn",
+      "required": false
+    },
+    {
+      "id": "vegehenna:straw",
+      "required": false
+    },
+    {
+      "id": "sturdy_trees:stump_remover",
+      "required": false
+    },
+    {
+      "id": "bwt:water_wheel",
+      "required": false
+    },
+    {
+      "id": "animageddon:web_untangling",
+      "required": false
+    },
+    "minecraft:wheat",
+    {
+      "id": "self_sustainable:wicker",
+      "required": false
+    },
+    {
+      "id": "self_sustainable:wicker_weaving",
+      "required": false
+    },
+    {
+      "id": "bwt:windmill",
+      "required": false
+    },
+    {
+      "id": "#self_sustainable:wool_items",
+      "required": false
+    },
+    {
+      "id": "#self_sustainable:wool_knit_items",
+      "required": false
+    },
+    {
+      "id": "bwt:grate",
+      "required": false
+    },
+    {
+      "id": "bwt:slats",
+      "required": false
+    },
+    {
+      "id": "bwt:wicker",
+      "required": false
+    },
+    "minecraft:bowl",
+    "minecraft:cobweb",
+    "minecraft:feather",
+    "minecraft:painting",
+    "minecraft:saddle",
+    "minecraft:leather",
+    "minecraft:sugar_cane",
+    "minecraft:paper",
+    "minecraft:sugar",
+    "minecraft:cake",
+    "minecraft:glass_bottle",
+    "minecraft:writable_book",
+    "minecraft:written_book",
+    "minecraft:item_frame",
+    "minecraft:glow_item_frame",
+    "minecraft:flower_pot",
+    "#minecraft:skulls",
+    "#minecraft:boats",
+    "minecraft:book",
+    "minecraft:bow",
+    "minecraft:carrot_on_a_stick",
+    "minecraft:map",
+    "minecraft:enchanted_book",
+    "minecraft:fishing_rod",
+    "minecraft:baked_potato",
+    "minecraft:pumpkin_pie",
+    "minecraft:honey_bottle",
+    "minecraft:ominous_bottle",
+    "minecraft:dried_kelp",
+    "minecraft:apple",
+    "minecraft:chorus_fruit",
+    "minecraft:melon_slice",
+    "minecraft:carrot",
+    "minecraft:potato",
+    "minecraft:beetroot",
+    "#c:foods/berry",
+    "#c:foods/bread",
+    "#c:foods/cookie",
+    "#c:foods/dough",
+    "#c:foods/raw_meat",
+    "#c:foods/raw_fish",
+    "#c:foods/cooked_meat",
+    "#c:foods/cooked_fish",
+    "#c:foods/soup",
+    "#c:foods/candy",
+    "#c:foods/pie",
+    "#c:foods/edible_when_placed",
+    "#c:foods/food_poisoning",
+    "minecraft:filled_map",
+    "#minecraft:signs",
+    "#minecraft:hanging_signs",
+    "minecraft:snowball"
+  ]
+}

@@ -2,7 +2,7 @@ package org.btwr.core.mixin.entity;
 
 import com.llamalad7.mixinextras.injector.ModifyReturnValue;
 import net.minecraft.entity.SpawnGroup;
-import org.btwr.core.config.BTWRModConfig;
+import org.btwr.core.config.ModConfig;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
@@ -15,7 +15,7 @@ public abstract class SpawnGroupMixin {
 
     @ModifyReturnValue(method = "getCapacity", at = @At("RETURN"))
     private int modifyCapacity(int maxInstancesPerChunk) {
-        if (BTWRModConfig.increasedMonsterSpawnsPerChunk.get()) {
+        if (ModConfig.increasedMonsterSpawnsPerChunk.get()) {
             if (this.name.equals(SpawnGroup.MONSTER.getName())) {
                 return 90;
             }

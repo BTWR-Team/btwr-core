@@ -22,9 +22,8 @@ import net.minecraft.predicate.item.ItemPredicate;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.ItemTags;
 import net.minecraft.text.Text;
-import org.btwr.core.block.BTWR_Blocks;
+import org.btwr.core.block.ModBlocks;
 import org.btwr.core.block.blocks.BlightBlock;
-import org.btwr.core.item.BTWR_Items;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -53,11 +52,12 @@ public class BTWRLootTableProvider extends FabricBlockLootTableProvider {
     }
 
     private void generateModTables() {
-        addDrop(BTWR_Blocks.BLIGHT, this::blightDrops);
-        addDrop(BTWR_Blocks.FLINT_BLOCK, this::flintBlockDrops);
-        addDrop(BTWR_Blocks.DIAMOND_INGOT_BLOCK);
-        addDrop(BTWR_Blocks.SPIDER_EYE_BLOCK);
-        addDrop(BTWR_Blocks.SPIDER_EYE_SLAB, this::slabDrops);
+        addDrop(ModBlocks.BLIGHT, this::blightDrops);
+        addDrop(ModBlocks.FLINT_BLOCK, this::flintBlockDrops);
+        addDrop(ModBlocks.DIAMOND_INGOT_BLOCK);
+        addDrop(ModBlocks.SPIDER_EYE_BLOCK);
+        addDrop(ModBlocks.SPIDER_EYE_SLAB, this::slabDrops);
+        addDrop(ModBlocks.PLACED_STICK, Items.STICK);
     }
 
     private LootTable.Builder blightDrops(Block block) {
@@ -69,7 +69,7 @@ public class BTWRLootTableProvider extends FabricBlockLootTableProvider {
                         .rolls(ConstantLootNumberProvider.create(1.0f))
                         .with(AlternativeEntry.builder(
                                 // Level 3 — drop with custom data
-                                ItemEntry.builder(BTWR_Blocks.BLIGHT)
+                                ItemEntry.builder(ModBlocks.BLIGHT)
                                         .conditionally(BlockStatePropertyLootCondition.builder(block)
                                                 .properties(StatePredicate.Builder.create()
                                                         .exactMatch(BlightBlock.LEVEL, 3)))
@@ -79,7 +79,7 @@ public class BTWRLootTableProvider extends FabricBlockLootTableProvider {
                                                         .styled(style -> style.withItalic(false)),
                                                 SetNameLootFunction.Target.CUSTOM_NAME)),
                                 // All other levels — drop plain blight
-                                ItemEntry.builder(BTWR_Blocks.BLIGHT)
+                                ItemEntry.builder(ModBlocks.BLIGHT)
                         ))
         );
     }
@@ -90,7 +90,7 @@ public class BTWRLootTableProvider extends FabricBlockLootTableProvider {
                         .rolls(ConstantLootNumberProvider.create(1))
                         .with(AlternativeEntry.builder(
                                 // Drop fully with pickaxe
-                                ItemEntry.builder(BTWR_Blocks.FLINT_BLOCK).conditionally(WITH_PICKAXE),
+                                ItemEntry.builder(ModBlocks.FLINT_BLOCK).conditionally(WITH_PICKAXE),
                                 // Otherwise drop flint
                                 ItemEntry.builder(Items.FLINT)
                                         .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(9)))

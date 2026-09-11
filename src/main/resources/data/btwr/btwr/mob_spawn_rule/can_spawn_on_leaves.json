@@ -1,0 +1,19 @@
+{
+  "type": "btwr:any_of",
+  "predicates": [
+    {
+      "type": "btwr:not",
+      "predicate": {
+        "type": "btwr:matches_tag",
+        "tag": "minecraft:leaves"
+      }
+    },
+    {
+      "type": "btwr:matches_entity_type",
+      "entities": [
+        "minecraft:ocelot",
+        "minecraft:parrot"
+      ]
+    }
+  ]
+}

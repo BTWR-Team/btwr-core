@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "facing=down":  { "model": "btwr:block/placed_stick" },
+    "facing=up":    { "model": "btwr:block/placed_stick", "x": 180 },
+    "facing=north": { "model": "btwr:block/placed_stick", "x": 90, "y": 180 },
+    "facing=south": { "model": "btwr:block/placed_stick", "x": 90 },
+    "facing=west":  { "model": "btwr:block/placed_stick", "x": 90, "y": 90 },
+    "facing=east":  { "model": "btwr:block/placed_stick", "x": 90, "y": 270 }
+  }
+}

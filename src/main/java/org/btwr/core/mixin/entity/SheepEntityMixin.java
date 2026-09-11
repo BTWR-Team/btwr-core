@@ -1,6 +1,6 @@
 package org.btwr.core.mixin.entity;
 
-import org.btwr.core.item.BTWR_Items;
+import org.btwr.core.item.ModItems;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.passive.AnimalEntity;
 import net.minecraft.entity.passive.SheepEntity;
@@ -34,7 +34,7 @@ public abstract class SheepEntityMixin extends AnimalEntity
         ItemStack itemStack = player.getStackInHand(hand);
 
         // Added Diamond Shears as condition here
-        if (itemStack.isOf(Items.SHEARS) || itemStack.isOf(BTWR_Items.DIAMOND_SHEARS)) {
+        if (itemStack.isOf(Items.SHEARS) || itemStack.isOf(ModItems.DIAMOND_SHEARS)) {
             if (!this.getWorld().isClient && this.isShearable()) {
                 this.sheared(SoundCategory.PLAYERS);
                 this.emitGameEvent(GameEvent.SHEAR, player);
